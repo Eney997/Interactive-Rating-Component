@@ -47,3 +47,28 @@
     font-weight: 400;
     line-height: 22px;
 }
+
+@media (width>769px) {
+    .tyimg {
+        background-image: url(secondThankPick.svg);
+        background-position: 120px;
+        width: 100%;
+        height: 200px;
+    }
+    .selected {
+        width: 193px;
+        height: 32px;
+        margin-left: 113px;
+        margin-top: -20px;
+    }
+    .thankyou {
+        font-size: 28px;
+        margin-left: 135px;
+    }
+    .tyDown {
+        width: 340px;
+        font-size: 15px;
+        margin-left: 40px;
+        margin-bottom: 45px;
+    }
+}

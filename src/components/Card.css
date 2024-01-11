@@ -5,3 +5,11 @@
     border-radius: 15px;
     background-color:#232A34; 
 }
+
+@media (width>769px) {
+    .card {
+        width: 412px;
+        height: 416px;
+        border-radius: 30px;
+    }
+}

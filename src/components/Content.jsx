@@ -76,5 +76,4 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
     </Card>
     )
 }
-
 export default Content
