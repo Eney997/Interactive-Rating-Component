@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Content from './components/content'
+import Content from './components/Content'
 import Thankyoupage from './components/Thankyoupage'
 
 function App() {
