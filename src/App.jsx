@@ -8,7 +8,11 @@ function App() {
   const [content,setContent] = useState(null)
   return (
     <>
-      <Content/>
+      {
+        showThankYouPage ? (
+          <Thankyoupage content={content}/>
+        ) : <Content content={content} setContent={setContent} setShowThankYouPage={setShowThankYouPage}/>
+      }
     </>
   )
 }

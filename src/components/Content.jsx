@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Content.css'
 import Card from '../components/Card'
 
-const Content = () => {
+const Content = ({content,setContent,setShowThankYouPage}) => {
     const [activeContent, setActiveContent] = useState({
         one:false,
         two:false,
@@ -10,6 +10,10 @@ const Content = () => {
         four:false,
         five:false
     })
+    const handleSubmit = () => {
+        if(!content) return
+        setShowThankYouPage(true)
+    }
   return (
     <Card>
     <div className='starImg'></div>
@@ -25,6 +29,7 @@ const Content = () => {
                 four:false,
                 five:false,
             })
+            setContent(1)
         }}>1</div>
         <div className={activeContent.two ? 'op active' : 'op'} onClick={()=> {
             setActiveContent({
@@ -34,6 +39,7 @@ const Content = () => {
                 four:false,
                 five:false,
             })
+            setContent(2)
         }}>2</div>
         <div className={activeContent.thre ? 'op active' : 'op'} onClick={()=> {
             setActiveContent({
@@ -43,6 +49,7 @@ const Content = () => {
                 four:false,
                 five:false,
             })
+            setContent(3)
         }}>3</div>
         <div className={activeContent.four ? 'op active' : 'op'} onClick={()=> {
             setActiveContent({
@@ -52,6 +59,7 @@ const Content = () => {
                 four:true,
                 five:false,
             })
+            setContent(4)
         }}>4</div>
         <div className={activeContent.five ? 'op active' : 'op'} onClick={()=> {
             setActiveContent({
@@ -61,9 +69,10 @@ const Content = () => {
                 four:false,
                 five:true,
             })
+            setContent(5)
         }}>5</div>
     </div>  
-    <button className='subBut'><span className='inButtxt'>SUBMIT</span></button>
+    <button className='subBut' onClick={handleSubmit}><span className='inButtxt'>SUBMIT</span></button>
     </Card>
     )
 }
