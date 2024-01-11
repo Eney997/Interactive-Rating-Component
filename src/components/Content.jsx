@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Content.css'
 import Card from '../components/Card'
+import img from '../public/circleStar.svg'
 
 const Content = ({content,setContent,setShowThankYouPage}) => {
     const [activeContent, setActiveContent] = useState({
@@ -16,7 +17,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
     }
   return (
     <Card>
-    <div className='starImg'></div>
+    <img src={img} className='starImg'/>
     <h1 className='headtittle'>How did we do?</h1>
     <p className='txt'>Please let us know how we did with your support request.
         All feedback is appreciated to help us improve our offering!</p>

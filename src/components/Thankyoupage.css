@@ -1,9 +1,6 @@
 .tyimg {
-    background-image: url(backPick.svg);
-    background-repeat: no-repeat;
-    background-position: 88px 34px;
-    width: 100%;
-    height: 130px;
+    margin-top: 24px;
+    margin-left: 88px;
 }
 .selected {
     margin-top: 24px;
@@ -50,16 +47,16 @@
 
 @media (width>769px) {
     .tyimg {
-        background-image: url(secondThankPick.svg);
-        background-position: 120px;
-        width: 100%;
-        height: 200px;
+        width: 162px;
+        height: 108px;
+        margin-top: 50px;
+        margin-left: 120px;
     }
     .selected {
         width: 193px;
         height: 32px;
         margin-left: 113px;
-        margin-top: -20px;
+        margin-top: 20px;
     }
     .thankyou {
         font-size: 28px;

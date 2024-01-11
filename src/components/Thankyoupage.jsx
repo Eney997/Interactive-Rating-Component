@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from './Card'
 import './Thankyoupage.css'
+import secImg from '../public/backPick.svg'
 
 const Thankyoupage = ({content}) => {
   return (
     <Card>
-        <div className='tyimg'></div>
+        <img src={secImg} alt='' className='tyimg'/>
         <div className='selected'>
             <p className='selectedP'>You selected {content} out of 5</p>
         </div>
