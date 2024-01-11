@@ -22,7 +22,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
     <p className='txt'>Please let us know how we did with your support request.
         All feedback is appreciated to help us improve our offering!</p>
     <div className='options'>
-        <div className={activeContent.one ? 'op active' : 'op'} onClick={()=> {
+        <div className={activeContent.one ? 'op:active' : 'op'} onClick={()=> {
             setActiveContent({
                 one:true,
                 two:false,
@@ -32,7 +32,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
             })
             setContent(1)
         }}>1</div>
-        <div className={activeContent.two ? 'op active' : 'op'} onClick={()=> {
+        <div className={activeContent.two ? 'op:active' : 'op'} onClick={()=> {
             setActiveContent({
                 one:false,
                 two:true,
@@ -42,7 +42,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
             })
             setContent(2)
         }}>2</div>
-        <div className={activeContent.thre ? 'op active' : 'op'} onClick={()=> {
+        <div className={activeContent.thre ? 'op:active' : 'op'} onClick={()=> {
             setActiveContent({
                 one:false,
                 two:false,
@@ -52,7 +52,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
             })
             setContent(3)
         }}>3</div>
-        <div className={activeContent.four ? 'op active' : 'op'} onClick={()=> {
+        <div className={activeContent.four ? 'op:active' : 'op'} onClick={()=> {
             setActiveContent({
                 one:false,
                 two:false,
@@ -62,7 +62,7 @@ const Content = ({content,setContent,setShowThankYouPage}) => {
             })
             setContent(4)
         }}>4</div>
-        <div className={activeContent.five ? 'op active' : 'op'} onClick={()=> {
+        <div className={activeContent.five ? 'op:active' : 'op'} onClick={()=> {
             setActiveContent({
                 one:false,
                 two:false,
